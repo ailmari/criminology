@@ -11,6 +11,8 @@ def extract_NNPs(text):
 
 if __name__ == "__main__":
     # Broken, fix read_csv arguments (http://stackoverflow.com/questions/24251219/pandas-read-csv-low-memory-and-dtype-options)
+    # Also, download the panamapapers: https://offshoreleaks.icij.org/pages/database
+    # Download "archive of all files" (.csv files)
     df = pd.read_csv('panamapapers/Officers.csv')
     names = df.name
 
